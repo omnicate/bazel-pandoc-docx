@@ -14,6 +14,11 @@ local_repository(
 # you should fetch it *before* calling this.
 # Alternatively, you can skip calling this function, so long as you've
 # already fetched all the dependencies.
-load("@com_wgtwo_rules_pandoc_docx//pandoc_docx:repositories.bzl", "rules_pandoc_docx_dependencies")
+load("@com_wgtwo_rules_pandoc_docx//pandoc_docx:repositories.bzl", "pandoc_docx_register_toolchains", "rules_pandoc_docx_dependencies")
 
 rules_pandoc_docx_dependencies()
+
+pandoc_docx_register_toolchains(
+    name = "pandoc_docx",
+    pandoc_docx_version = "3.1",
+)

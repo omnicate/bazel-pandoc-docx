@@ -2,15 +2,21 @@
 
 Public API re-exports
 
-<a id="example"></a>
+<a id="pandoc"></a>
 
-## example
+## pandoc
 
 <pre>
-example()
+pandoc(<a href="#pandoc-kwargs">kwargs</a>)
 </pre>
 
-This is an example
 
+
+**PARAMETERS**
+
+
+| Name  | Description | Default Value |
+| :------------- | :------------- | :------------- |
+| <a id="pandoc-kwargs"></a>kwargs |  <p align="center"> - </p>   |  none |
 
 

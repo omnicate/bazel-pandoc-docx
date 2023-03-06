@@ -18,8 +18,8 @@ load("//pandoc_docx:repositories.bzl", "pandoc_docx_register_toolchains", "rules
 rules_pandoc_docx_dependencies()
 
 pandoc_docx_register_toolchains(
-    name = "pandoc_docx1_14",
-    pandoc_docx_version = "1.14.2",
+    name = "pandoc_docx",
+    pandoc_docx_version = "3.1",
 )
 
 # For running our own unit tests

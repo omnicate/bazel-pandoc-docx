@@ -22,13 +22,13 @@ with only the toolchain attribute pointing into the platform-specific repositori
 PLATFORMS = {
     "x86_64-apple-darwin": struct(
         compatible_with = [
-            "@platforms//os:macos",
+            "@platforms//os:osx",
             "@platforms//cpu:x86_64",
         ],
     ),
     "aarch64-apple-darwin": struct(
         compatible_with = [
-            "@platforms//os:macos",
+            "@platforms//os:osx",
             "@platforms//cpu:aarch64",
         ],
     ),
@@ -38,10 +38,10 @@ PLATFORMS = {
             "@platforms//cpu:x86_64",
         ],
     ),
-    "x86_64-pc-windows-msvc": struct(
+    "aarch64-unknown-linux-gnu": struct(
         compatible_with = [
-            "@platforms//os:windows",
-            "@platforms//cpu:x86_64",
+            "@platforms//os:linux",
+            "@platforms//cpu:aarch64",
         ],
     ),
 }
