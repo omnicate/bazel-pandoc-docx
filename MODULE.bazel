@@ -1,5 +1,5 @@
 module(
-    name = "com_myorg_rules_mylang",
+    name = "com_wgtwo_rules_pandoc_docx",
     compatibility_level = 1,
     version = "0.0.0",
 )
@@ -7,8 +7,8 @@ module(
 bazel_dep(name = "bazel_skylib", version = "1.3.0")
 bazel_dep(name = "platforms", version = "0.0.5")
 
-mylang = use_extension("//mylang:extensions.bzl", "mylang")
-mylang.toolchain(mylang_version = "1.14.2")
-use_repo(mylang, "mylang_toolchains")
+pandoc_docx = use_extension("//pandoc_docx:extensions.bzl", "pandoc_docx")
+pandoc_docx.toolchain(pandoc_docx_version = "1.14.2")
+use_repo(pandoc_docx, "pandoc_docx_toolchains")
 
-register_toolchains("@mylang_toolchains//:all")
+register_toolchains("@pandoc_docx_toolchains//:all")

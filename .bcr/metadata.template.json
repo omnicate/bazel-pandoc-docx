@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/myorg/rules_mylang",
+  "homepage": "https://github.com/omnicate/rules_pandoc_docx",
   "maintainers": [],
-  "repository": ["github:myorg/rules_mylang"],
+  "repository": ["github:omnicate/rules_pandoc_docx"],
   "versions": [],
   "yanked_versions": {}
 }
