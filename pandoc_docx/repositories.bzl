@@ -40,8 +40,8 @@ _ATTRS = {
 }
 
 def _pandoc_docx_repo_impl(repository_ctx):
-    # https://github.com/omnicate/bazel-pandoc-docx/releases/download/v3.1/pandoc-aarch64-apple-darwin.tar.gz
-    url = "https://github.com/omnicate/bazel-pandoc-docx/releases/download/v{0}/pandoc-{1}.tar.gz".format(
+    # https://github.com/omnicate/rules_pandoc_docx/releases/download/3.1/pandoc-aarch64-apple-darwin.tar.gz
+    url = "https://github.com/omnicate/rules_pandoc_docx/releases/download/v{0}/pandoc-{1}.tar.gz".format(
         repository_ctx.attr.pandoc_docx_version,
         repository_ctx.attr.platform,
     )
@@ -79,7 +79,7 @@ def pandoc_docx_register_toolchains(name, register = True, **kwargs):
     - register a toolchain pointing at each platform
     Users can avoid this macro and do these steps themselves, if they want more control.
     Args:
-        name: base name for all created repos, like "pandoc_docx1_14"
+        name: base name for all created repos, like "pandoc_docx"
         register: whether to call through to native.register_toolchains.
             Should be True for WORKSPACE users, but false when used under bzlmod extension
         **kwargs: passed to each node_repositories call
